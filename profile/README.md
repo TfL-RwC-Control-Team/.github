@@ -37,4 +37,10 @@ end
 subgraph Aux [Auxillary Systems]
 RDM -- Relays --> Horn & Lights[Front/Rear Lights]
 end
+
+subgraph Signature ["2026 Alwyn Whalley"]
+direction LR
+style Signature fill:none,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5,font-size:10px
+end
+UHF ~~~ Signature
 ```
