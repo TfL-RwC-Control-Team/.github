@@ -6,7 +6,7 @@ CAD for control devices can also be found in the repositories here.
 ## Control Topology
 ```mermaid
 flowchart LR
-CPD[\CANBus and Power Distributor\] e1@== CANBus + Pwr ==> MMC[Master Motor Controller]
+CPD[\CANBus and Power Distributor\] e1@== CANBus + Pwr ==> MMC[<a href='/RoboteQ-HDC2460S'>Master Motor Controller</a>]
 CPD e2@<== CANBus + Pwr ==> SMC[Slave Motor Controller]
 CPD e3@<== CANBus + Pwr ==> HandCont[Remote Controller]
 CPD e4@<== CANBus + Pwr ==> CabCont[Ride-On Controller]
