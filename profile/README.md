@@ -12,9 +12,11 @@ CPD e3@<== CANBus + Pwr ==> HandCont[Remote Controller]
 CPD e4@<== CANBus + Pwr ==> CabCont[Ride-On Controller]
 CPD e5@<== CANBus + Pwr ==> LAS[Location Annoucement Controller]
 CPD e6@<== CANBus + Pwr ==> RDM[Remote Data Monitoring Controller]
+CPD e7@<== CANBus + Pwr ==> RTC[Round Train Circuit]
+CPD e8@<== CANBus + Pwr ==> CCS[Compressor Control System]
 
 classDef animate stroke-dasharray: 9,5,stroke-dashoffset: 900,animation: dash 25s linear infinite;
-class e1,e2,e3,e4,e5,e6 animate
+class e1,e2,e3,e4,e5,e6,e7,e8 animate
 
 SMS[Speed Encoder] -- DIn --> MMC
 MMC -- DOut --> BrkR[Rear Brake Relay]
@@ -44,5 +46,10 @@ style Signature fill:none,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5,fon
 end
 UHF ~~~ Signature
 
-click MMC "https://github.com/TfL-RwC-Control-Team/RoboteQ-HDC2460S" "Open In New Tab" _blank
+click MMC "https://github.com/TfL-RwC-Control-Team/RoboteQ-HDC2460S" "RoboteQ-HDC2460S Repo"
+click RDM "https://github.com/TfL-RwC-Control-Team/RDM" "RDM Repo"
+click RTC "https://github.com/TfL-RwC-Control-Team/RTC" "RTC Repo"
+click LAS "https://github.com/TfL-RwC-Control-Team/LAS" "LAS Repo"
+click CCS "https://github.com/TfL-RwC-Control-Team/CCS" "CCS Repo"
+click HandCont "https://github.com/TfL-RwC-Control-Team/TfLRwCDIS" "TfLRwCDIS Repo"
 ```
