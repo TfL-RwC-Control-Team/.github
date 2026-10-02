@@ -2,9 +2,20 @@
 This Github organisation was created to house the code repositories for the 2025 control rebuild of the TfL RwC Locomotive.
 
 CAD for control devices can also be found in the repositories here.
-
 ## Control Topology
 ```mermaid
+%%{init: {
+  'layout': 'elk',
+  'flowchart': {
+    'curve' : 'stepBefore',
+    'nodeSpacing' : 50,
+    'rankSpacing' : 80,
+    'useMaxWidth' : true,
+    'htmlLabels': true,
+    'padding' : 10,
+    'inheritDir': false
+}}}%%
+
 flowchart LR
 CPD[\CANBus and Power Distributor\] e1@== CANBus + Pwr ==> MMC[Master Motor Controller]
 CPD e2@<== CANBus + Pwr ==> SMC[Slave Motor Controller]
@@ -24,7 +35,7 @@ SMC -- DOut--> BrkF[Front Brake Relay]
 
 subgraph LASGrp [Location Annoucement System]
 UHF[UHF RFID Reciever] <-- SPI --> LAS
-LAS -- Jack --> Amp[Audio Amp]
+LAS -- 3.5mm Jack --> Amp[Audio Amp]
 Amp --> Spkrs[Rear Speakers]
 end
 
