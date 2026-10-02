@@ -44,5 +44,5 @@ style Signature fill:none,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5,fon
 end
 UHF ~~~ Signature
 
-click MMC "https://github.com/TfL-RwC-Control-Team/RoboteQ-HDC2460S" _parent
+click MMC "https://github.com/TfL-RwC-Control-Team/RoboteQ-HDC2460S" "Open In New Tab" _blank
 ```
