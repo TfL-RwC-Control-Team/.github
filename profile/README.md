@@ -51,12 +51,6 @@ subgraph Aux [Auxillary Systems]
 RDM -- Relays --> Horn & Lights[Front/Rear Lights]
 end
 
-subgraph Signature ["2026 Alwyn Whalley"]
-direction LR
-style Signature fill:none,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5,font-size:10px
-end
-UHF ~~~ Signature
-
 click MMC "https://github.com/TfL-RwC-Control-Team/RoboteQ-HDC2460S" "RoboteQ-HDC2460S Repo"
 click RDM "https://github.com/TfL-RwC-Control-Team/RDM" "RDM Repo"
 click RTC "https://github.com/TfL-RwC-Control-Team/RTC" "RTC Repo"
@@ -64,3 +58,4 @@ click LAS "https://github.com/TfL-RwC-Control-Team/LAS" "LAS Repo"
 click CCS "https://github.com/TfL-RwC-Control-Team/CCS" "CCS Repo"
 click HandCont "https://github.com/TfL-RwC-Control-Team/TfLRwCDIS" "TfLRwCDIS Repo"
 ```
+Alwyn Whalley 2026
