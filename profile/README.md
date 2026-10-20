@@ -24,7 +24,7 @@ CPD e4@<== CANBus + Pwr ==> CabCont[Ride-On Controller]
 CPD e5@<== CANBus + Pwr ==> LAS[Location Annoucement Controller]
 CPD e6@<== CANBus + Pwr ==> RDM[Remote Data Monitoring Controller]
 CPD e7@<== CANBus + Pwr ==> RTC[Round Train Circuit]
-CPD e8@<== CANBus + Pwr ==> CCS[Compressor Control System]
+CPD e8@<== CANBus + Pwr ==> CCS[Compressor Controller]
 
 classDef animate stroke-dasharray: 9,5,stroke-dashoffset: 900,animation: dash 25s linear infinite;
 class e1,e2,e3,e4,e5,e6,e7,e8 animate
@@ -49,6 +49,11 @@ end
 
 subgraph Aux [Auxillary Systems]
 RDM -- Relays --> Horn & Lights[Front/Rear Lights]
+end
+
+subgraph CCSGrp [Compressor Control System]
+CCS -- GPIO --> Relay
+Relay --> Compressor
 end
 
 click MMC "https://github.com/TfL-RwC-Control-Team/RoboteQ-HDC2460S" "RoboteQ-HDC2460S Repo"
