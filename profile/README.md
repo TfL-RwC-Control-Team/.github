@@ -63,4 +63,20 @@ click LAS "https://github.com/TfL-RwC-Control-Team/LAS" "LAS Repo"
 click CCS "https://github.com/TfL-RwC-Control-Team/CCS" "CCS Repo"
 click HandCont "https://github.com/TfL-RwC-Control-Team/TfLRwCDIS" "TfLRwCDIS Repo"
 ```
+
+## Physical Layout
+```mermaid
+block
+  columns 1
+  block:front
+    MMC LAS
+  end
+  block:middle
+    CabCont
+  end
+  block:rear
+    RDM RTC CCS HandCont SMC
+  end
+```
+
 Alwyn Whalley 2026
